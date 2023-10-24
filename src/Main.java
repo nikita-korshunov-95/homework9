@@ -16,7 +16,6 @@ public class Main {
     }
 
     public static void task1() {
-        java.util.Random random = new java.util.Random();
         System.out.println("Задача №1");
         int[] arr = generateRandomArray();
         int sum = 0;
@@ -27,7 +26,6 @@ public class Main {
     }
 
     public static void task2() {
-        java.util.Random random = new java.util.Random();
         System.out.println("Задача №2");
         int[] arr = generateRandomArray();
         int maxPayments = -1;
@@ -37,7 +35,7 @@ public class Main {
             }
         }
         System.out.println("Максимальная сумма трат за день составила " + maxPayments + " рублей");
-        int minPayments = -1    ;
+        int minPayments = Integer.MAX_VALUE;
         for (int i = 0; i < arr.length - 1; i++) {
             if (arr[i] < arr[i+1]) {
                 minPayments = arr[i];
@@ -48,7 +46,6 @@ public class Main {
     }
 
     public static void task3() {
-        java.util.Random random = new java.util.Random();
         System.out.println("Задача №3");
         int[] arr = generateRandomArray();
         int sum = 0;
@@ -60,7 +57,6 @@ public class Main {
     }
 
     public static void task4() {
-        java.util.Random random = new java.util.Random();
         System.out.println("Задача №4");
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         for (int i = reverseFullName.length - 1; i >= 0; i--) {
